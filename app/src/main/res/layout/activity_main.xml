@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#FFF"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" tools:ignore="UselessParent">
+
+        <EditText android:id="@+id/etMoney"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:background="#FFF"
+                  android:ellipsize="end"
+                  android:textColor="@color/colorPrimary"
+                  android:hint="Nominal"
+                  android:textSize="20sp"
+                  android:inputType="numberDecimal"
+                  android:textAlignment="center"
+                  tools:text="0000000000000"
+                  tools:ignore="Autofill,LabelFor"/>
+
+        <Button android:id="@+id/btnShow"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="show it"/>
+
+        <TextView
+                android:id="@+id/tvMoney"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="-"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
